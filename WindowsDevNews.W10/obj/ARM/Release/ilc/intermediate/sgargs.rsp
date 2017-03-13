@@ -1,0 +1,10 @@
+/out:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\intermediate\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\intermediate\PreMergeILTransformed\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\intermediate\TransformedSRWR\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\in\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\in\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\ARM\ilc\lib\Private\\"
+/ref:"C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\obj\ARM\Release\ilc\in\WinMetadata\\"
+/ca:System.Private.CoreLib

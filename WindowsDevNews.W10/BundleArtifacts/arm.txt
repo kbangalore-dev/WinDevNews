@@ -1,0 +1,2 @@
+MainPackage=C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\bin\ARM\Release\WindowsDevNews.W10_1.2.2.0_ARM.appx
+SymbolPackage=C:\App\WinDevNews\1.0.1\WindowsDevNews.W10\AppPackages\WindowsDevNews.W10_1.2.2.0_Test\WindowsDevNews.W10_1.2.2.0_ARM.appxsym

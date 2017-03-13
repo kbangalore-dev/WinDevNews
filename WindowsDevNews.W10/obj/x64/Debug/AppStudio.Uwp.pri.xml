@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="AppStudio.Uwp" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="AppStudio.Uwp">
+				<NamedResource name="AppStudio.Uwp.xr.xml" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/AppStudio.Uwp.xr.xml">
+					<Candidate type="Path">
+						<Value>AppStudio.Uwp\AppStudio.Uwp.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Controls">
+					<ResourceMapSubtree name="Carousel">
+						<NamedResource name="Carousel.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/Carousel/Carousel.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ErrorNotificationControl">
+						<NamedResource name="ErrorNotificationControl.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/ErrorNotificationControl/ErrorNotificationControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="GifControl">
+						<NamedResource name="GifControl.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/GifControl/GifControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="HtmlBlock">
+						<NamedResource name="HtmlBlock.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/HtmlBlock/HtmlBlock.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="HtmlViewer">
+						<NamedResource name="HtmlViewer.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/HtmlViewer/HtmlViewer.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ImageEx">
+						<NamedResource name="ImageEx.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/ImageEx/ImageEx.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Indicator">
+						<NamedResource name="Indicator.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/Indicator/Indicator.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Pivorama">
+						<NamedResource name="Pivorama.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/Pivorama/Pivorama.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="PropertySet">
+						<NamedResource name="PropertySet.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/PropertySet/PropertySet.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Relativebox">
+						<NamedResource name="Relativebox.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/Relativebox/Relativebox.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ResponsiveGridView">
+						<NamedResource name="ResponsiveGridView.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/ResponsiveGridView/ResponsiveGridView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="RoundButton">
+						<NamedResource name="RoundButton.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/RoundButton/RoundButton.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="SearchBox">
+						<NamedResource name="SearchBox.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/SearchBox/SearchBox.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="SectionList">
+						<NamedResource name="SectionList.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/SectionList/SectionList.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ShellControl">
+						<NamedResource name="ShellControl.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/ShellControl/ShellControl.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="SliderView">
+						<NamedResource name="SliderView.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/SliderView/SliderView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="SplitterCard">
+						<NamedResource name="SplitterCard.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/SplitterCard/SplitterCard.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="VariableSizedGrid">
+						<NamedResource name="VariableSizedGrid.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/VariableSizedGrid/VariableSizedGrid.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Virtualbox">
+						<NamedResource name="Virtualbox.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Controls/Virtualbox/Virtualbox.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Labs">
+					<ResourceMapSubtree name="Accordion">
+						<NamedResource name="Accordion.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/Accordion/Accordion.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="AutoHide">
+						<NamedResource name="AutoHide.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/AutoHide/AutoHide.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="Mosaic">
+						<NamedResource name="Mosaic.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/Mosaic/Mosaic.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ResponsiveGridView">
+						<NamedResource name="ResponsiveGridView.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/ResponsiveGridView/ResponsiveGridView.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ResponsiveRow">
+						<NamedResource name="ResponsiveRow.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/ResponsiveRow/ResponsiveRow.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ResponsiveTextBlock">
+						<NamedResource name="ResponsiveTextBlock.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/ResponsiveTextBlock/ResponsiveTextBlock.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="ShapeImage">
+						<NamedResource name="ShapeImage.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/ShapeImage/ShapeImage.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+					<ResourceMapSubtree name="SlideShow">
+						<NamedResource name="SlideShow.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Labs/SlideShow/SlideShow.xbf">
+							<Candidate type="EmbeddedData">
+								<Base64Value>[Embedded Binary Data]</Base64Value>
+							</Candidate>
+						</NamedResource>
+					</ResourceMapSubtree>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="AppStudio.Uwp.rd.xml" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Properties/AppStudio.Uwp.rd.xml">
+						<Candidate type="Path">
+							<Value>AppStudio.Uwp\Properties\AppStudio.Uwp.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://AppStudio.Uwp/Files/AppStudio.Uwp/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

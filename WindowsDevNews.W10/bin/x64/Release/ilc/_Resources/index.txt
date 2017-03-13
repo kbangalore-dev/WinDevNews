@@ -1,0 +1,4 @@
+AppStudio.Uwp, Version=1.5.3.0, Culture=neutral, PublicKeyToken=null
+  AppStudio.Uwp.Controls.HtmlBlock.channel9-screen.png
+  AppStudio.Uwp.Controls.HtmlBlock.PlayButton.png
+  AppStudio.Uwp.Controls.HtmlViewer.HtmlViewerScript.js
