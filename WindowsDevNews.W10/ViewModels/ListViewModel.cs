@@ -17,6 +17,7 @@ using Windows.UI.Xaml.Controls;
 using WindowsDevNews.Navigation;
 using WindowsDevNews.Sections;
 using WindowsDevNews.Services;
+using AppStudio.DataProviders.YouTube;
 
 namespace WindowsDevNews.ViewModels
 {
@@ -238,6 +239,23 @@ namespace WindowsDevNews.ViewModels
         {
 		    SourceItems.Clear();
             SourceItems.AddRange(content);
+
+            if (_section.Name == "DeveloperVideosSection")
+            {
+                var contentList = content.ToList<TSchema>() as List<YouTubeSchema>;
+                if (contentList != null) {
+                    contentList.Insert(3, new YouTubeSchema()
+                    {
+                        Title = "Barbie-life in a dreamhouse",
+                        ImageUrl = "http://vcdn.adnxs.com/p/creative-image/1a/11/67/b3/1a1167b3-4eb0-4677-a0a7-4768be473303.jpg",
+                        Summary = "Awesome Story Telling App",
+                        VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
+                        VideoId = "__Ad__"
+                    });
+
+                    content = contentList as IEnumerable<TSchema>;
+                }
+            }
 
             var parsedItems = new List<ItemViewModel>();
             foreach (var item in GetVisibleItems(content, _visibleItems))

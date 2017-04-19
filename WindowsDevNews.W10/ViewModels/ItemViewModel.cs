@@ -59,6 +59,13 @@ namespace WindowsDevNews.ViewModels
             set { SetProperty(ref _imageUrl, value); }
         }
 
+        private string _sponsoredText;
+        public string SponsoredText
+        {
+            get { return _sponsoredText; }
+            set { SetProperty(ref _sponsoredText, value); }
+        }
+
         private string _content;
         public string Content
         {

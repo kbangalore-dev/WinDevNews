@@ -33,7 +33,18 @@ namespace WindowsDevNews.Sections
                 QueryType = YouTubeQueryType.Playlist,
                 Query = @"PLIPLqGm8fkLoug_m9lMj_ReQZH_KpTaj-",
             };
-            return await _dataProvider.LoadDataAsync(config, MaxRecords);
+            var listofvideos = (await _dataProvider.LoadDataAsync(config, MaxRecords)).ToList();
+            listofvideos.Add(new YouTubeSchema()
+            {
+                Title = "Barbie-life in a dreamhouse",
+                ImageUrl = "http://vcdn.adnxs.com/p/creative-image/1a/11/67/b3/1a1167b3-4eb0-4677-a0a7-4768be473303.jpg",
+                Summary = "Awesome Story Telling App",
+                VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\"
+
+            });
+
+            return listofvideos;
+            
         }
 
         public override async Task<IEnumerable<YouTubeSchema>> GetNextPageAsync()
@@ -53,7 +64,7 @@ namespace WindowsDevNews.Sections
         {
             get 
             {
-                return new ListPageConfig<YouTubeSchema>
+                var videos = new ListPageConfig<YouTubeSchema>
                 {
                     Title = "Developer Videos",
 
@@ -64,12 +75,18 @@ namespace WindowsDevNews.Sections
                         viewModel.Title = item.Title.ToSafeString();
                         viewModel.SubTitle = item.Summary.ToSafeString();
                         viewModel.ImageUrl = ItemViewModel.LoadSafeUrl(item.ImageUrl.ToSafeString());
+                        if(item.VideoId == "__Ad__")
+                        {
+                            viewModel.SponsoredText = "Ad";
+                        }
                     },
                     DetailNavigation = (item) =>
                     {
 						return NavInfo.FromPage<Pages.DeveloperVideosDetailPage>(true);
                     }
                 };
+
+                return videos;
             }
         }
 

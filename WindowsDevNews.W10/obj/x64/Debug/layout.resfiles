@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\about.png
 Assets\ApplicationLogo.png
 Assets\Design\DarkGray.png
@@ -35,4 +36,3 @@ Layouts\List\Breakpoints.Medium.MenuSmall.json
 Layouts\List\Breakpoints.Medium.MenuText.json
 Layouts\List\Breakpoints.Medium.Photo.json
 Properties\Default.rd.xml
-WinMetadata\Windows.winmd

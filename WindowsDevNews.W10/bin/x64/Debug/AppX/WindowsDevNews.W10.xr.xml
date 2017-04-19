@@ -200,6 +200,8 @@
       <RootMethod Name="SetAlignTopWithPanel" />
       <RootMethod Name="GetAlignHorizontalCenterWithPanel" />
       <RootMethod Name="SetAlignHorizontalCenterWithPanel" />
+      <RootMethod Name="GetAbove" />
+      <RootMethod Name="SetAbove" />
       <RootMethod Name="GetAlignVerticalCenterWith" />
       <RootMethod Name="SetAlignVerticalCenterWith" />
     </RootType>

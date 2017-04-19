@@ -10,7 +10,7 @@
             
             <Color x:Key="TitleForegroundColor">#333333</Color>
 			<Color x:Key="SubtitleForegroundColor">#9f9f9f</Color>
-            
+            <Color x:Key="AdTextColor">#ffca18</Color>
             <Color x:Key="DescriptionForegroundColor">#333333</Color>
             
             <Color x:Key="NavigationPaneBackgroundColor">#e6e6e6</Color>

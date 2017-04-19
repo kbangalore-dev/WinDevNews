@@ -44,6 +44,16 @@
                                     Background="Transparent"
                                     Foreground="{StaticResource TitleForeground}"
                                     Source="{Binding ImageUrl, Mode=OneWay}" Stretch="UniformToFill"/>
+
+                                <TextBlock x:ConnectionId='7'
+                                    x:Name="Sponsored"
+                                               
+                                    Margin="0,6,0,0" 
+                                    RelativePanel.Above="image"
+                                                                              
+                                    Style="{StaticResource AdStyle}"                                
+                                    FontSize="{Binding Active.titleFontSize, ElementName=vbp}"
+                                    MaxLines="{Binding Active.titleMaxLines, ElementName=vbp}"/>
                             </Grid>
                             <TextBlock x:ConnectionId='5'
                                 x:Name="title"

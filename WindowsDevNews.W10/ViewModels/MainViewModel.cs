@@ -51,6 +51,7 @@ namespace WindowsDevNews.ViewModels
                     ActionType = ActionType.Primary
                 });
             }
+
         }
 
 		#region Commands

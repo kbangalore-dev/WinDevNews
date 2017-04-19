@@ -32,6 +32,7 @@ namespace WindowsDevNews.Pages
 			commandBar.DataContext = ViewModel;
 			searchBox.SearchCommand = SearchCommand;
 			this.SizeChanged += OnSizeChanged;
+
         }		
         public MainViewModel ViewModel { get; set; }
 
@@ -41,9 +42,15 @@ namespace WindowsDevNews.Pages
 			//Page cache requires set commandBar in code
 			ShellPage.Current.ShellControl.SetCommandBar(commandBar);
             ShellPage.Current.ShellControl.SelectItem("Home");
+            adcontrol1.Visibility = Visibility.Visible;
         }
 
-		private void OnSizeChanged(object sender, SizeChangedEventArgs e)
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            adcontrol1.Visibility = Visibility.Collapsed;
+        }
+
+        private void OnSizeChanged(object sender, SizeChangedEventArgs e)
         {
             searchBox.SearchWidth = e.NewSize.Width > 640 ? 230 : 190;
         }

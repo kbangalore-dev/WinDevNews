@@ -6,6 +6,7 @@
     xmlns:converters="using:AppStudio.Uwp.Converters">
 
     <!--Text Brushes-->
+    <SolidColorBrush x:Key="AdForeground" Color="{StaticResource AdTextColor}"/>
     <SolidColorBrush x:Key="TitleForeground" Color="{StaticResource TitleForegroundColor}"/>
     <SolidColorBrush x:Key="SubtitleForeground" Color="{StaticResource SubtitleForegroundColor}"/>
     <SolidColorBrush x:Key="DescriptionForeground" Color="{StaticResource DescriptionForegroundColor}"/>
@@ -52,7 +53,12 @@
         <Setter Property="Foreground" Value="{StaticResource TitleForeground}"/>
         <Setter Property="FontWeight" Value="SegoeUI"/>
     </Style>
-    
+
+    <Style TargetType="TextBlock" x:Key="AdStyle" BasedOn="{StaticResource BaseTextStyle}">
+        <Setter Property="Foreground" Value="{StaticResource AdForeground}"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+    </Style>
+
     <Style TargetType="TextBlock" x:Key="SubtitleStyle" BasedOn="{StaticResource BaseTextStyle}">
         <Setter Property="Foreground" Value="{StaticResource SubtitleForeground}"/>
 		<Setter Property="FontWeight" Value="SegoeUI"/>
