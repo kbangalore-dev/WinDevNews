@@ -16,7 +16,6 @@
   </Properties>
   <Dependencies>
     <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10493.0" MaxVersionTested="10.0.10586.0" />
-    <PackageDependency Name="Microsoft.Advertising.Xaml" MinVersion="10.1703.1.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
     <PackageDependency Name="Microsoft.VCLibs.140.00.Debug" MinVersion="14.0.25019.0" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
     <PackageDependency Name="Microsoft.NET.CoreRuntime.1.1" MinVersion="1.1.25129.1" Publisher="CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US" />
   </Dependencies>
@@ -40,11 +39,56 @@
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
+  <Extensions>
+    <Extension Category="windows.activatableClass.inProcessServer">
+      <InProcessServer>
+        <Path>Microsoft.Advertising.dll</Path>
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.ManipulationStateChangedEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.AdControl2" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.NativeAdController" ThreadingModel="STA" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.AdControl" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.ExpandProperties" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.InterstitialAd" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.WinRT.UI.blank" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Publisher" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Impression" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Data" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.NativeVideo" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.OpenRTBRequest" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Image" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.NativeWrapper" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.User" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.UserExtension" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Title" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.NativeWrapperRequest" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Asset" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.DeviceExtension" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Native" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.PublisherExtension" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Device" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Utils" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Ads.Requests.AdBroker.Application" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.EventLogging" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.AdScheduler" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.AdExtension" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.SdkInfoProvider" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.AdErrorEventArgs" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.AdTagCollection" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.ProjectedMediaConstraints" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.NativeAdPlacement" ThreadingModel="STA" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.AdPlacement" ThreadingModel="STA" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.Advertisement" ThreadingModel="both" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.PlatformDependency" ThreadingModel="STA" />
+        <ActivatableClass ActivatableClassId="Microsoft.Advertising.Shared.WinRT.ProjectedContext" ThreadingModel="both" />
+      </InProcessServer>
+    </Extension>
+  </Extensions>
   <build:Metadata>
     <build:Item Name="TargetFrameworkMoniker" Value=".NETCore,Version=v5.0" />
     <build:Item Name="VisualStudio" Version="15.0" />
     <build:Item Name="VisualStudioEdition" Value="Microsoft Visual Studio Professional 2017" />
-    <build:Item Name="OperatingSystem" Version="10.0.15063.0 (WinBuild.160101.0800)" />
+    <build:Item Name="OperatingSystem" Version="10.0.16170.1000 (WinBuild.160101.0800)" />
     <build:Item Name="Microsoft.Build.AppxPackage.dll" Version="15.0.26323.1" />
     <build:Item Name="ProjectGUID" Value="{792DFE80-956C-48FC-B676-93FA8C02FF3F}" />
     <build:Item Name="OptimizingToolset" Value="None" />

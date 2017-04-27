@@ -1621,9 +1621,9 @@ namespace WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo
                 {
                     var otherProviders = new global::System.Collections.Generic.List<global::Windows.UI.Xaml.Markup.IXamlMetadataProvider>();
                     global::Windows.UI.Xaml.Markup.IXamlMetadataProvider provider;
-                    provider = new global::Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
-                    otherProviders.Add(provider); 
                     provider = new global::AppStudio.Uwp.AppStudio_Uwp_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
+                    otherProviders.Add(provider); 
+                    provider = new global::Microsoft.Advertising.MicrosoftAdvertising_XamlTypeInfo.XamlMetaDataProvider() as global::Windows.UI.Xaml.Markup.IXamlMetadataProvider;
                     otherProviders.Add(provider); 
                     _otherProviders = otherProviders;
                 }

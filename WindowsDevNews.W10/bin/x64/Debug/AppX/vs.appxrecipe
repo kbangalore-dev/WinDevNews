@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>8BCAABE5C168D19ABD0CFE42E6F3E342DB058651B34DB26C6A2E76003583054A</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>F9777C2682AB0A977713EA2D786CD8153DCFF7A9DE9BDEE762A6D7F6F3E0F476</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>15508RonavApps.WindowsDevNews_1.2.2.0_x64__gnbx6zzh37pta</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>15508RonavApps.WindowsDevNews_gnbx6zzh37pta!App</RegisteredUserModeAppID>
     <RegisteredPackageID>15508RonavApps.WindowsDevNews</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-18T11:57:09.650</Modified>
+      <Modified>2017-04-27T08:47:56.234</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\WindowsDevNews.W10.exe">
       <PackagePath>entrypoint\WindowsDevNews.W10.exe</PackagePath>
-      <Modified>2017-04-18T11:57:08.526</Modified>
+      <Modified>2017-04-27T08:47:54.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -463,6 +463,14 @@
       <PackagePath>AppStudio.Uwp.dll</PackagePath>
       <Modified>2016-09-01T03:58:46.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\AdsReferences\Microsoft.Advertising.dll">
+      <PackagePath>Microsoft.Advertising.dll</PackagePath>
+      <Modified>2017-04-19T04:47:24.219</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\AdsReferences\Microsoft.Advertising.winmd">
+      <PackagePath>Microsoft.Advertising.winmd</PackagePath>
+      <Modified>2017-04-19T04:47:22.389</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\Layouts\Detail\MulticolumnLayout.json">
       <PackagePath>Layouts\Detail\MulticolumnLayout.json</PackagePath>
       <Modified>2017-03-13T03:48:14.988</Modified>
@@ -637,38 +645,14 @@
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-18T11:57:09.137</Modified>
+      <Modified>2017-04-27T08:47:55.460</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\Core\WindowsDevNews.W10.exe">
       <PackagePath>WindowsDevNews.W10.exe</PackagePath>
-      <Modified>2017-04-18T11:57:09.645</Modified>
+      <Modified>2017-04-27T08:47:56.225</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\ARM\Microsoft.Advertising.Xaml.ARM.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x64\Microsoft.Advertising.Xaml.x64.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x86\Microsoft.Advertising.Xaml.x86.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
       <Version>14.0.25019.0</Version>

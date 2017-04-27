@@ -18,6 +18,8 @@ using WindowsDevNews.Navigation;
 using WindowsDevNews.Sections;
 using WindowsDevNews.Services;
 using AppStudio.DataProviders.YouTube;
+using Microsoft.Advertising.WinRT.UI;
+using Microsoft.Advertising.Shared.WinRT;
 
 namespace WindowsDevNews.ViewModels
 {
@@ -102,6 +104,7 @@ namespace WindowsDevNews.ViewModels
         private Section<TSchema> _section;
         private int _visibleItems;
         private SchemaBase _connected;
+        private NativeAd ad;
 
         protected override Type ListPage
         {
@@ -129,6 +132,24 @@ namespace WindowsDevNews.ViewModels
 					ActionType = ActionType.Primary
 				});
             }
+
+            if (_section.Name == "DeveloperVideosSection")
+            {
+                NativeAdController nativeAdController = new NativeAdController();
+                nativeAdController.GetAd("9xsfdsfsz", "native");
+                nativeAdController.AdReady += OnAdReady;
+            }
+        }
+
+        void OnAdReady(object sender, object e)
+        {
+            ad = (NativeAd)e;
+            if (ad == null)
+            {
+                return;
+            }
+
+            // ad.RegisterAdContainer(NativeAdContainer);
         }
 
         public override async Task LoadDataAsync(bool forceRefresh = false, SchemaBase connected = null)
@@ -246,9 +267,9 @@ namespace WindowsDevNews.ViewModels
                 if (contentList != null) {
                     contentList.Insert(3, new YouTubeSchema()
                     {
-                        Title = "Barbie-life in a dreamhouse",
-                        ImageUrl = "http://vcdn.adnxs.com/p/creative-image/1a/11/67/b3/1a1167b3-4eb0-4677-a0a7-4768be473303.jpg",
-                        Summary = "Awesome Story Telling App",
+                        Title = ad.Title,
+                        ImageUrl = ad.MainImage.url,
+                        Summary = ad.Description,
                         VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
                         VideoId = "__Ad__"
                     });

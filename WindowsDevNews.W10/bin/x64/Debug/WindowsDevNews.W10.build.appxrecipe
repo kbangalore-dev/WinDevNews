@@ -346,6 +346,12 @@
     <AppxPackagedFile Include="C:\Users\kiranban\.nuget\packages\WindowsAppStudio.Uwp\1.5.3\lib\uap10.0\AppStudio.Uwp.dll">
       <PackagePath>AppStudio.Uwp.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\AdsReferences\Microsoft.Advertising.dll">
+      <PackagePath>Microsoft.Advertising.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\AdsReferences\Microsoft.Advertising.winmd">
+      <PackagePath>Microsoft.Advertising.winmd</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\Layouts\Detail\MulticolumnLayout.json">
       <PackagePath>Layouts\Detail\MulticolumnLayout.json</PackagePath>
     </AppxPackagedFile>
@@ -485,30 +491,6 @@
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>ARM</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\ARM\Microsoft.Advertising.Xaml.ARM.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>x64</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x64\Microsoft.Advertising.Xaml.x64.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
-    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\">
-      <Name>Microsoft.Advertising.Xaml</Name>
-      <Version>10.1703.1.0</Version>
-      <Architecture>x86</Architecture>
-      <FrameworkIdentity>Name=Microsoft.Advertising.Xaml, MinVersion=10.1703.1.0, Publisher=%27CN=Microsoft Corporation, O=Microsoft Corporation, L=Redmond, S=Washington, C=US%27</FrameworkIdentity>
-      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.Advertising.Xaml\10.0\.\AppX\x86\Microsoft.Advertising.Xaml.x86.10.0.appx</AppxLocation>
-      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkID=619694</MoreInfo>
-    </ResolvedSDKReference>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.VCLibs\14.0\">
       <Name>Microsoft.VCLibs.140.00.Debug</Name>
       <Version>14.0.25019.0</Version>

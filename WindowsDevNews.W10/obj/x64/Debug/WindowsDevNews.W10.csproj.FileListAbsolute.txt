@@ -572,6 +572,8 @@ C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\Syste
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\System.Xml.XmlSerializer.dll
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\AppStudio.DataProviders.dll
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\AppStudio.Uwp.dll
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\Microsoft.Advertising.winmd
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\bin\x64\Debug\Microsoft.Advertising.dll
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\WindowsDevNews.W10.csprojResolveAssemblyReference.cache
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\App.g.i.cs
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\App.g.cs
@@ -679,6 +681,8 @@ C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layou
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\DataUpdateInformationControl.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\SectionListItemHeader.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\HeroImage.xaml
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\AdvertisingControl.xaml
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\HomePage.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\WindowsDeveloperBlogListPage.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\DeveloperVideosListPage.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\UWPDevForBeginnersListPage.xaml
@@ -700,8 +704,6 @@ C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Style
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\AppColors.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\SectionListStyles.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\DetailStyles.xaml
-C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\AdvertisingControl.xaml
-C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\HomePage.xaml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\App.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\List\ListBigHorizontalCardBox.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\List\ListBigHorizontalCard.xbf
@@ -727,6 +729,8 @@ C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layou
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\DataUpdateInformationControl.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\SectionListItemHeader.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\HeroImage.xbf
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\AdvertisingControl.xbf
+C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\HomePage.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\WindowsDeveloperBlogListPage.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\DeveloperVideosListPage.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\UWPDevForBeginnersListPage.xbf
@@ -748,8 +752,6 @@ C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Style
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\AppColors.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\SectionListStyles.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Styles\DetailStyles.xbf
-C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Layouts\Controls\AdvertisingControl.xbf
-C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\Pages\HomePage.xbf
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\XamlSaveStateFile.xml
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\WindowsDevNews.W10.exe
 C:\Users\kiranban\Source\Repos\WinDevNews\WindowsDevNews.W10\obj\x64\Debug\WindowsDevNews.W10.pdb

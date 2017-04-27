@@ -511,15 +511,17 @@
   </ItemGroup>
   <ItemGroup>
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
-    <SDKReference Include="Microsoft.Advertising.Xaml, Version=10.0">
-      <Name>Microsoft Advertising SDK for XAML</Name>
-    </SDKReference>
     <SDKReference Include="Microsoft.VCLibs, Version=14.0">
       <Name>Visual C++ 2015 Runtime for Universal Windows Platform Apps</Name>
     </SDKReference>
     <SDKReference Include="WindowsDesktop, Version=10.0.10586.0">
       <Name>Windows Desktop Extensions for the UWP</Name>
     </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Advertising">
+      <HintPath>AdsReferences\Microsoft.Advertising.winmd</HintPath>
+    </Reference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
