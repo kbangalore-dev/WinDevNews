@@ -20,7 +20,7 @@ namespace WindowsDevNews.Sections
     {
 		private YouTubeDataProvider _dataProvider;
 
-        private NativeAd ad;
+
 
         public DeveloperVideosSection()
 		{
@@ -29,9 +29,6 @@ namespace WindowsDevNews.Sections
 				ApiKey = "AIzaSyA8vY0RViK17Z_-QwjFu7wDUPk4vr8xrBw"
 			});
 
-            NativeAdController nativeAdController = new NativeAdController();
-            nativeAdController.GetAd("9xsfdsfsz", "native");
-            nativeAdController.AdReady += OnAdReady;
         }
 
         public override async Task<IEnumerable<YouTubeSchema>> GetDataAsync(SchemaBase connectedItem = null)
@@ -44,30 +41,12 @@ namespace WindowsDevNews.Sections
 
             
             var listofvideos = (await _dataProvider.LoadDataAsync(config, MaxRecords)).ToList();
-            listofvideos.Add(new YouTubeSchema()
-            {
-                Title = ad.Title,
-                ImageUrl = ad.MainImage.url,
-                Summary = ad.Description,
-                VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\"
-
-            });
-
+      
             return listofvideos;
             
         }
 
-        void OnAdReady(object sender, object e)
-        {
-            ad = (NativeAd)e;
-            if(ad == null)
-            {
-                return;
-            }
-            
-            // ad.RegisterAdContainer(NativeAdContainer);
-        }
-
+    
 
         public override async Task<IEnumerable<YouTubeSchema>> GetNextPageAsync()
         {

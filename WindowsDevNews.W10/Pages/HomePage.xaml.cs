@@ -42,12 +42,12 @@ namespace WindowsDevNews.Pages
 			//Page cache requires set commandBar in code
 			ShellPage.Current.ShellControl.SetCommandBar(commandBar);
             ShellPage.Current.ShellControl.SelectItem("Home");
-            adcontrol1.Visibility = Visibility.Visible;
+            //adcontrol1.Visibility = Visibility.Visible;
         }
 
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
-            adcontrol1.Visibility = Visibility.Collapsed;
+  //          adcontrol1.Visibility = Visibility.Collapsed;
         }
 
         private void OnSizeChanged(object sender, SizeChangedEventArgs e)

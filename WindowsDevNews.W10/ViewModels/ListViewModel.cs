@@ -135,8 +135,8 @@ namespace WindowsDevNews.ViewModels
 
             if (_section.Name == "DeveloperVideosSection")
             {
-                NativeAdController nativeAdController = new NativeAdController();
-                nativeAdController.GetAd("9xsfdsfsz", "native");
+                NativeAdsManager nativeAdController = new NativeAdsManager();
+                nativeAdController.RequestAd("b132be36-66c2-4053-813b-abc73e9e2841", "0000000000");
                 nativeAdController.AdReady += OnAdReady;
             }
         }
@@ -148,8 +148,6 @@ namespace WindowsDevNews.ViewModels
             {
                 return;
             }
-
-            // ad.RegisterAdContainer(NativeAdContainer);
         }
 
         public override async Task LoadDataAsync(bool forceRefresh = false, SchemaBase connected = null)
@@ -256,6 +254,8 @@ namespace WindowsDevNews.ViewModels
             }
         }
 
+        //Native Ad Demo
+
         private void ParseItems(IEnumerable<TSchema> content, Func<ItemViewModel, bool> filterFunc = null)
         {
 		    SourceItems.Clear();
@@ -268,7 +268,7 @@ namespace WindowsDevNews.ViewModels
                     contentList.Insert(3, new YouTubeSchema()
                     {
                         Title = ad.Title,
-                        ImageUrl = ad.MainImage.url,
+                        ImageUrl = ad.MainImages[0].Url,
                         Summary = ad.Description,
                         VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
                         VideoId = "__Ad__"

@@ -15921,10 +15921,10 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews\\WindowsDevNews.W10\\WindowsDevNews.W10.csproj",
+      "projectUniqueName": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews3\\WindowsDevNews.W10\\WindowsDevNews.W10.csproj",
       "projectName": "WindowsDevNews.W10",
-      "projectPath": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews\\WindowsDevNews.W10\\WindowsDevNews.W10.csproj",
-      "projectJsonPath": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews\\WindowsDevNews.W10\\project.json",
+      "projectPath": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews3\\WindowsDevNews.W10\\WindowsDevNews.W10.csproj",
+      "projectJsonPath": "C:\\Users\\kiranban\\Source\\Repos\\WinDevNews3\\WindowsDevNews.W10\\project.json",
       "projectStyle": "ProjectJson"
     },
     "dependencies": {

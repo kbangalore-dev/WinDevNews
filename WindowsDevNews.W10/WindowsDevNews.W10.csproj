@@ -519,7 +519,8 @@
     </SDKReference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Advertising">
+    <Reference Include="Microsoft.Advertising, Version=255.255.255.255, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>AdsReferences\Microsoft.Advertising.winmd</HintPath>
     </Reference>
   </ItemGroup>

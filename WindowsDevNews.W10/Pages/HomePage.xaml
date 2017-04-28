@@ -58,7 +58,7 @@
                     <list_layouts:ListBigHorizontalCardBox DataContext="{Binding}" ItemsSource="{Binding Items}" ItemClickCommand="{Binding ItemClickCommand}" OneRowModeEnabled="True" Margin="19,0,12,24"/>
                 </DataTemplate>
 			</was_controls:SectionListItem>
-            <was_controls:SectionListItem    
+            <!--<was_controls:SectionListItem    
                 x:Name="adcontrol1"
                 DataContext="{Binding SectionAd}"
                 HeaderLinkVisibility="Collapsed"
@@ -69,7 +69,7 @@
                 <DataTemplate>
                     <controls:AdvertisingControl Margin="0,20,0,0"/>
                 </DataTemplate>
-            </was_controls:SectionListItem>
+            </was_controls:SectionListItem>-->
 			<was_controls:SectionListItem
                 DataContext="{Binding DeveloperVideos}"
                 HeaderLinkClickCommand="{Binding SectionHeaderClickCommand}" 

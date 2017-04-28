@@ -81,7 +81,6 @@
     <RootPropertyPathName Name="Twitter" />
     <RootPropertyPathName Name="UWPDevForBeginners" />
     <RootPropertyPathName Name="DeveloperVideos" />
-    <RootPropertyPathName Name="SectionAd" />
     <RootPropertyPathName Name="WindowsDeveloperBlog" />
     <RootPropertyPathName Name="ApplyFontSizeCommand" />
     <RootPropertyPathName Name="Share" />
@@ -602,9 +601,6 @@
       <RootProperty Name="ErrorVisibility" />
       <RootProperty Name="LoadingVisibility" />
       <RootProperty Name="ContentTemplate" />
-      <RootProperty Name="TitleVisibility" />
-      <RootProperty Name="ManageLoading" />
-      <RootProperty Name="Margin" />
       <RootProperty Name="Visibility" />
     </RootType>
     <RootType FullName="WindowsDevNews.Pages.HomePage" />

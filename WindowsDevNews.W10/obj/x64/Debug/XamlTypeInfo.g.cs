@@ -1304,12 +1304,12 @@ namespace WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo
                 userType.AddMemberName("HeaderLinkVisibility");
                 userType.AddMemberName("ErrorVisibility");
                 userType.AddMemberName("LoadingVisibility");
-                userType.AddMemberName("TitleVisibility");
-                userType.AddMemberName("ManageLoading");
                 userType.AddMemberName("ContentVisibility");
                 userType.AddMemberName("ErrorColor");
                 userType.AddMemberName("ErrorText");
                 userType.AddMemberName("HeaderLinkText");
+                userType.AddMemberName("ManageLoading");
+                userType.AddMemberName("TitleVisibility");
                 userType.AddMemberName("Title");
                 xamlType = userType;
                 break;
@@ -3132,65 +3132,65 @@ namespace WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             that.LoadingVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_154_SectionListItem_TitleVisibility(object instance)
-        {
-            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
-            return that.TitleVisibility;
-        }
-        private void set_154_SectionListItem_TitleVisibility(object instance, object Value)
-        {
-            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
-            that.TitleVisibility = (global::Windows.UI.Xaml.Visibility)Value;
-        }
-        private object get_155_SectionListItem_ManageLoading(object instance)
-        {
-            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
-            return that.ManageLoading;
-        }
-        private void set_155_SectionListItem_ManageLoading(object instance, object Value)
-        {
-            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
-            that.ManageLoading = (global::System.Boolean)Value;
-        }
-        private object get_156_SectionListItem_ContentVisibility(object instance)
+        private object get_154_SectionListItem_ContentVisibility(object instance)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             return that.ContentVisibility;
         }
-        private void set_156_SectionListItem_ContentVisibility(object instance, object Value)
+        private void set_154_SectionListItem_ContentVisibility(object instance, object Value)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             that.ContentVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
-        private object get_157_SectionListItem_ErrorColor(object instance)
+        private object get_155_SectionListItem_ErrorColor(object instance)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             return that.ErrorColor;
         }
-        private void set_157_SectionListItem_ErrorColor(object instance, object Value)
+        private void set_155_SectionListItem_ErrorColor(object instance, object Value)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             that.ErrorColor = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_158_SectionListItem_ErrorText(object instance)
+        private object get_156_SectionListItem_ErrorText(object instance)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             return that.ErrorText;
         }
-        private void set_158_SectionListItem_ErrorText(object instance, object Value)
+        private void set_156_SectionListItem_ErrorText(object instance, object Value)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             that.ErrorText = (global::System.String)Value;
         }
-        private object get_159_SectionListItem_HeaderLinkText(object instance)
+        private object get_157_SectionListItem_HeaderLinkText(object instance)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             return that.HeaderLinkText;
         }
-        private void set_159_SectionListItem_HeaderLinkText(object instance, object Value)
+        private void set_157_SectionListItem_HeaderLinkText(object instance, object Value)
         {
             var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
             that.HeaderLinkText = (global::System.String)Value;
+        }
+        private object get_158_SectionListItem_ManageLoading(object instance)
+        {
+            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
+            return that.ManageLoading;
+        }
+        private void set_158_SectionListItem_ManageLoading(object instance, object Value)
+        {
+            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
+            that.ManageLoading = (global::System.Boolean)Value;
+        }
+        private object get_159_SectionListItem_TitleVisibility(object instance)
+        {
+            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
+            return that.TitleVisibility;
+        }
+        private void set_159_SectionListItem_TitleVisibility(object instance, object Value)
+        {
+            var that = (global::AppStudio.Uwp.Controls.SectionListItem)instance;
+            that.TitleVisibility = (global::Windows.UI.Xaml.Visibility)Value;
         }
         private object get_160_SectionListItem_Title(object instance)
         {
@@ -5175,46 +5175,46 @@ namespace WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo
                 xamlMember.Getter = get_153_SectionListItem_LoadingVisibility;
                 xamlMember.Setter = set_153_SectionListItem_LoadingVisibility;
                 break;
-            case "AppStudio.Uwp.Controls.SectionListItem.TitleVisibility":
-                userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
-                xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "TitleVisibility", "Windows.UI.Xaml.Visibility");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_154_SectionListItem_TitleVisibility;
-                xamlMember.Setter = set_154_SectionListItem_TitleVisibility;
-                break;
-            case "AppStudio.Uwp.Controls.SectionListItem.ManageLoading":
-                userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
-                xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "ManageLoading", "Boolean");
-                xamlMember.Getter = get_155_SectionListItem_ManageLoading;
-                xamlMember.Setter = set_155_SectionListItem_ManageLoading;
-                break;
             case "AppStudio.Uwp.Controls.SectionListItem.ContentVisibility":
                 userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
                 xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "ContentVisibility", "Windows.UI.Xaml.Visibility");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_156_SectionListItem_ContentVisibility;
-                xamlMember.Setter = set_156_SectionListItem_ContentVisibility;
+                xamlMember.Getter = get_154_SectionListItem_ContentVisibility;
+                xamlMember.Setter = set_154_SectionListItem_ContentVisibility;
                 break;
             case "AppStudio.Uwp.Controls.SectionListItem.ErrorColor":
                 userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
                 xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "ErrorColor", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_157_SectionListItem_ErrorColor;
-                xamlMember.Setter = set_157_SectionListItem_ErrorColor;
+                xamlMember.Getter = get_155_SectionListItem_ErrorColor;
+                xamlMember.Setter = set_155_SectionListItem_ErrorColor;
                 break;
             case "AppStudio.Uwp.Controls.SectionListItem.ErrorText":
                 userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
                 xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "ErrorText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_158_SectionListItem_ErrorText;
-                xamlMember.Setter = set_158_SectionListItem_ErrorText;
+                xamlMember.Getter = get_156_SectionListItem_ErrorText;
+                xamlMember.Setter = set_156_SectionListItem_ErrorText;
                 break;
             case "AppStudio.Uwp.Controls.SectionListItem.HeaderLinkText":
                 userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
                 xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "HeaderLinkText", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_159_SectionListItem_HeaderLinkText;
-                xamlMember.Setter = set_159_SectionListItem_HeaderLinkText;
+                xamlMember.Getter = get_157_SectionListItem_HeaderLinkText;
+                xamlMember.Setter = set_157_SectionListItem_HeaderLinkText;
+                break;
+            case "AppStudio.Uwp.Controls.SectionListItem.ManageLoading":
+                userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
+                xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "ManageLoading", "Boolean");
+                xamlMember.Getter = get_158_SectionListItem_ManageLoading;
+                xamlMember.Setter = set_158_SectionListItem_ManageLoading;
+                break;
+            case "AppStudio.Uwp.Controls.SectionListItem.TitleVisibility":
+                userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
+                xamlMember = new global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlMember(this, "TitleVisibility", "Windows.UI.Xaml.Visibility");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_159_SectionListItem_TitleVisibility;
+                xamlMember.Setter = set_159_SectionListItem_TitleVisibility;
                 break;
             case "AppStudio.Uwp.Controls.SectionListItem.Title":
                 userType = (global::WindowsDevNews.WindowsDevNews_W10_XamlTypeInfo.XamlUserType)GetXamlTypeByName("AppStudio.Uwp.Controls.SectionListItem");
