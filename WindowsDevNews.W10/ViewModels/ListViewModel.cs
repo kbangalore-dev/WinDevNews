@@ -105,6 +105,8 @@ namespace WindowsDevNews.ViewModels
         private int _visibleItems;
         private SchemaBase _connected;
         private NativeAd ad;
+        private IEnumerable<TSchema> contentValue;
+        private Func<ItemViewModel, bool> filterFuncValue;
 
         protected override Type ListPage
         {
@@ -135,6 +137,7 @@ namespace WindowsDevNews.ViewModels
 
             if (_section.Name == "DeveloperVideosSection")
             {
+                ad = null;
                 NativeAdsManager nativeAdController = new NativeAdsManager();
                 nativeAdController.RequestAd("b132be36-66c2-4053-813b-abc73e9e2841", "0000000000");
                 nativeAdController.AdReady += OnAdReady;
@@ -148,6 +151,42 @@ namespace WindowsDevNews.ViewModels
             {
                 return;
             }
+
+            var contentList = contentValue.ToList<TSchema>() as List<YouTubeSchema>;
+            if (contentList != null)
+            {
+                contentList.Insert(3, new YouTubeSchema()
+                {
+                    Title = ad.Title,
+                    ImageUrl = ad.MainImages[0].Url,
+                    Summary = ad.Description,
+                    VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
+                    VideoId = "__Ad__"
+                });
+
+                contentValue = contentList as IEnumerable<TSchema>;
+            }
+
+            var parsedItems = new List<ItemViewModel>();
+            foreach (var item in GetVisibleItems(contentValue, _visibleItems))
+            {
+                var parsedItem = new ItemViewModel
+                {
+                    Id = item._id,
+                    NavInfo = _section.ListPage.DetailNavigation(item)
+                };
+
+                _section.ListPage.LayoutBindings(parsedItem, item);
+
+                if (filterFuncValue == null || filterFuncValue(parsedItem))
+                {
+                    parsedItems.Add(parsedItem);
+                }
+            }
+            Items.Sync(parsedItems);
+
+            HasItems = Items.Count > 0;
+            HasMoreItems = contentValue.Count() > Items.Count;
         }
 
         public override async Task LoadDataAsync(bool forceRefresh = false, SchemaBase connected = null)
@@ -263,18 +302,27 @@ namespace WindowsDevNews.ViewModels
 
             if (_section.Name == "DeveloperVideosSection")
             {
-                var contentList = content.ToList<TSchema>() as List<YouTubeSchema>;
-                if (contentList != null) {
-                    contentList.Insert(3, new YouTubeSchema()
+                if (ad == null)
+                {
+                    contentValue = content;
+                    filterFuncValue = filterFunc;
+                }
+                else
+                {
+                    var contentList = content.ToList<TSchema>() as List<YouTubeSchema>;
+                    if (contentList != null)
                     {
-                        Title = ad.Title,
-                        ImageUrl = ad.MainImages[0].Url,
-                        Summary = ad.Description,
-                        VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
-                        VideoId = "__Ad__"
-                    });
+                        contentList.Insert(3, new YouTubeSchema()
+                        {
+                            Title = ad.Title,
+                            ImageUrl = ad.MainImages[0].Url,
+                            Summary = ad.Description,
+                            VideoUrl = @"http://sin1-ib.adnxs.com/click?mpmZmZmZ2T-amZmZmZnZPwAAAAAAAAAAmpmZmZmZ2T-amZmZmZnZP9ozUy1UorQNTGvnSPL39kovo_RYAAAAAMwdmgAYAQAAGAEAAAIAAABSt_kDdBsGAAAAAABVU0QAVVNEAAEAAQAUiAAAAAABAgQCAQAAAI8AjiTAUwAAAAA./pp=${AUCTION_PRICE}//cnd=%21-Ank0AjKj_IHENLu5h8Y9LYYIAQoipykmg0xAAAAAAAAAAA./bn=71133/test=1/clickenc=https%3A%2F%2Fwww.microsoft.com%2Fen-us%2Fstore%2Fp%2Fbarbie-life-in-a-dreamhouse-hd%2F9nblggh5lnwp\",
+                            VideoId = "__Ad__"
+                        });
 
-                    content = contentList as IEnumerable<TSchema>;
+                        content = contentList as IEnumerable<TSchema>;
+                    }
                 }
             }
 

@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\kiranban\Source\Repos\WinDevNews3\WindowsDevNews.W10\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-28T04:32:37.271</Modified>
+      <Modified>2017-05-02T21:50:12.767</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews3\WindowsDevNews.W10\bin\x64\Debug\WindowsDevNews.W10.exe">
       <PackagePath>entrypoint\WindowsDevNews.W10.exe</PackagePath>
-      <Modified>2017-04-28T04:32:36.090</Modified>
+      <Modified>2017-05-02T21:50:09.725</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -645,11 +645,11 @@
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews3\WindowsDevNews.W10\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-04-28T04:32:36.911</Modified>
+      <Modified>2017-05-02T21:50:12.064</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kiranban\Source\Repos\WinDevNews3\WindowsDevNews.W10\bin\x64\Debug\Core\WindowsDevNews.W10.exe">
       <PackagePath>WindowsDevNews.W10.exe</PackagePath>
-      <Modified>2017-04-28T04:32:37.262</Modified>
+      <Modified>2017-05-02T21:50:12.752</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
